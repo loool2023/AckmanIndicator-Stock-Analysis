@@ -270,7 +270,7 @@ if st.sidebar.button("🚀 点击执行智能估值", type="primary"):
                     return 'color: green; font-weight: bold'
             return ''
 
-        styled_df = display_df.style.applymap(color_shares, subset=['股数'] if '股数' in display_df.columns else [])
+        styled_df = display_df.style.map(color_shares, subset=['股数'] if '股数' in display_df.columns else [])
         if '操作' in display_df.columns:
             styled_df = styled_df.applymap(color_trade, subset=['操作'])
 
