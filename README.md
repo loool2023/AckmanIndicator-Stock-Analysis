@@ -31,4 +31,37 @@ A Streamlit-based intelligent quantitative analysis terminal that fetches Yahoo 
 Ensure Python 3.8 or above is installed, then run:
 
 ```bash
+# 1. Clone the repository
+git clone https://github.com
+cd AckmanIndicator-Stock-Analysis
+
+# 2. Install dependencies
+pip install -r requirements.txt
+
+# 3. Run the application
+streamlit run app.py
+```
+
+---
+
+## 🌐 Live Web App
+
+Don't want to install Python locally? Try the fully deployment version directly in your browser:  
+👉 **[Launch Live Demo on Streamlit Cloud](https://streamlit.app)**
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend/UI**: Streamlit
+- **Data Source**: Yahoo Finance API (`yfinance`)
+- **Data Visualization**: Plotly (Interactive Charts)
+- **Data Export**: Pandas & OpenPyXL (Excel Generator)
+
+---
+
+## 📜 Disclaimer
+
+*This tool is for educational and research purposes only. It does not constitute investment advice, financial advice, trading advice, or any other sort of advice. Please conduct your own due diligence before making any investment decisions.*
+
 pip install streamlit yfinance pandas openpyxl plotly
